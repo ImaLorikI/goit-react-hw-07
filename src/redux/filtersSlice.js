@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = '';
+const initialState = '123';
 
 const filtersSlice = createSlice({
-  name: 'filters',
+  name: 'gandon',
   initialState: initialState,
   reducers: {
     filterNumbers: (state, action) => {

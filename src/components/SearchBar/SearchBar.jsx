@@ -7,7 +7,6 @@ export const SearchBar = () => {
   const searchId = useId();
   const dispatch = useDispatch();
   const handleFilterChange = e => dispatch(filterNumbers(e.target.value.trim()));
-
   const value = useSelector(getFilter);
 
   return (
@@ -18,7 +17,7 @@ export const SearchBar = () => {
       <input
         className={css.input}
         type="text"
-        values={value}
+        value={value}
         id={searchId}
         onChange={handleFilterChange}
       />
