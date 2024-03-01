@@ -5,7 +5,7 @@ import { getContacts, getFilter } from '../../redux/selector';
 
 export default function ContactList() {
   const contacts = useSelector(getContacts);
-  const filters = useSelector(state => state.filters);
+  const filters = useSelector(getFilter);
   const filterContacts = contacts.filter(data => {
     return data.name.toLowerCase().includes(filters.toLowerCase());
   });

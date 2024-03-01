@@ -26,7 +26,6 @@ export const ContactForm = () => {
 
   const handleSubmit = (values, actions) => {
     const newContact = {
-      id: nanoid(),
       name: values.name,
       phone: values.number,
     };
